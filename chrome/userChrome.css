@@ -1,0 +1,38 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+#context-navigation,
+#context-sep-navigation {
+  display:none !important;
+}
+
+#back-button,
+#forward-button {
+  display: none !important;
+}
+
+#TabsToolbar {
+    display: none !important;
+}
+
+#PersonalToolbar {
+    visibility: collapse !important;
+}
+
+/*#navigator-toolbox:hover > #PersonalToolbar {
+    visibility: visible !important;
+}
+*/
+toolbarbutton#scrollbutton-up, toolbarbutton#scrollbutton-down {
+    /* Hide tab scroll buttons */
+    display: none;
+}
+
+.browser-toolbar > * #alltabs-button {
+    /* Hide tab drop-down list */
+    display: none;
+}
+
+.browser-toolbar > * #new-tab-button {
+    /* Hide new-tab button */
+    display: none;
+}
